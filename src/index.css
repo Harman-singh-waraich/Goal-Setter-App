@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;300;400;500;600;700;800&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Public Sans';
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+p {
+  line-height: 1.7;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  line-height: 2.2;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #000;
+  margin-bottom: 60px;
+}
+
+.logo {
+  font-size: 1.75em;
+  font-weight: 900;
+  text-shadow: 1px 1px 0px #000, 2px 2px 0px #000;
+  letter-spacing: 1.08px;
+  color: #f4f4f4;
+  -webkit-text-stroke: 1px black;
+  position: relative;
+}
+.logo .logo-circle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -25%;
+  left: -10%;
+}
+.header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header ul li {
+  margin-left: 20px;
+}
+
+.header ul li a {
+  display: flex;
+  align-items: center;
+}
+
+.header ul li a:hover {
+  color: #777;
+}
+
+.header ul li a svg {
+  margin-right: 5px;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  padding: 0 20px;
+  position: relative;
+}
+
+.heading p {
+  color: #36454F;
+}
+.heading h1 {
+  text-shadow: 1px 1px 0px #000, 2px 2px 0px #000;
+  letter-spacing: 1.08px;
+  color: #5CF1A4;
+  -webkit-text-stroke: 1px black;
+}
+.heading .star {
+  position: absolute;
+  top:-30%;
+  right: 10%;
+  width: 50px;
+  height: 50px;
+  
+}
+.goals {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.goal {
+  background-color: #87CEEB;
+  box-shadow: 4px 6px 0px #000;
+  border: 2px solid #000;
+  margin: 10px 0;
+  padding: 5px 4px 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.goal .close {
+  float: right;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 4px;
+  box-shadow: 2px 3px 0px #000;
+  font-size: 1em;
+  font-weight: 700;
+  color: #000;
+  cursor: pointer;
+  background: #FFF066;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: flex-end;
+}
+
+.form,
+.content {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.form-group {
+  margin-bottom: 10px;
+  
+}
+.form .line{
+  position: absolute;
+  bottom: -20%;
+  right: -5%;
+  width: 60px;
+  height: 60px;
+}
+.form .small-star{
+  position: absolute;
+  top: -20%;
+  left: -10%;
+  width: 40px;
+  height: 40px;
+}
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000;
+  box-shadow: 2px 3px 0px #000;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-family: inherit;
+  background: #E3DFF2;
+  color: #000;
+}
+
+.form-group label {
+  text-align: left;
+  display: block;
+  margin: 0 0 5px 3px;
+  color: #000;
+}
+
+.btn, .login-btn, .register-btn {
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  box-shadow: 4px 6px 0px #000 ;
+  background: #F4D738;
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  appearance: button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-btn, .register-btn {
+  padding: 5px 10px;
+  text-decoration: none;
+
+}
+.login-btn{
+  background: #FF4911;
+}
+.register-btn{
+  background: #87CEEB;
+}
+.btn svg {
+  margin-right: 8px;
+}
+
+.btn-reverse {
+  background: #fff;
+  color: #000;
+}
+
+.btn-block {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+.login-btn:active, .btn:active, .register-btn:active{
+  transform: translateY(2px) translateX(2px) scale(0.98);
+}
+.loadingSpinnerContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingSpinner {
+  width: 64px;
+  height: 64px;
+  border: 8px solid;
+  border-color: #000 transparent #555 transparent;
+  border-radius: 50%;
+  animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .form {
+    width: 90%;
+  }
+
+  .heading h1 {
+    font-size: 2rem;
+  }
+
+  .heading p {
+    font-size: 1.5rem;
+  }
+}

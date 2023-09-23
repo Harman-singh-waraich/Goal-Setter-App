@@ -1,46 +1,34 @@
-# Getting Started with Create React App and Redux
+# Goal Setter App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+This project was built with an intention to go over the ExpressJs , Mongoose , Redux and Netlify Serverless Functions.
+Also added a hint of neo brutalism style to the UI. 😉
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm install`
+Install the dependencies.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### `npm install netlify-cli -g`
+Install netlify-cli globally to develop and deploy the serverless react app.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### `netlify init`
 
-### `npm test`
+### `netlify dev`
+To test out the app, netlify will detect the underlying framework and run it along with the serverless functions.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+#### To deploy , just push your code to Github and link with netlfiy, netlfiy should automatically detect the functions and dploy your site.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Feel free to ask me any questions at :- Waraichharman68@gmail.com 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Reference 
+[Netlify Serverless Functions](https://www.netlify.com/products/functions/)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+[Deploy guide](https://docs.netlify.com/integrations/frameworks/express/)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+*This readme is not complete, but i'll try to update as soon as possible.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
